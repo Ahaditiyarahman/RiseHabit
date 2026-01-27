@@ -3,4 +3,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#ff0000</color>
+
+    <color name="primary_purple_bg">#4B476D</color>
+    <color name="primary_dark_indigo">#2D2640</color>
+    <color name="accent_yellow">#FFD60A</color>
+
+    <color name="ui_paper_parchment">#E1D3B6</color>
+    <color name="ui_button_gold">#F4C54F</color>
+    <color name="ui_text_brown">#4A3B2A</color>
+    <color name="ui_gray_dark">#484848</color>
+
+    <color name="art_sunset_orange">#CD6146</color>
+    <color name="art_cloud_pink">#FF9E80</color>
+    <color name="art_grass_green">#85B646</color>
+    <color name="art_water_blue">#63C3D6</color>
 </resources>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RiseHabit</string>
+    <string name="loading">Making Town...</string>
 </resources>
