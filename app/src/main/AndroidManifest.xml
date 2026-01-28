@@ -11,19 +11,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash.Clean">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyActivity"
+            android:exported="false" />
+        <activity
             android:name=".Splash"
-            android:theme="@style/Theme.Splash.Clean"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Splash.Clean">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
