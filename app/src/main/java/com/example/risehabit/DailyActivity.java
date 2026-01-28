@@ -8,12 +8,10 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DailyActivity extends AppCompatActivity {
-
-    // --- SETTING HALAMAN INI ---
     final int PAGE_INI = 2;
 
     ImageView imgBebek;
-    ImageView btnNavHome, btnNavTodo, btnNavProfile; // Daily tidak perlu
+    ImageView btnNavHome, btnNavTodo, btnNavProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,16 +23,13 @@ public class DailyActivity extends AppCompatActivity {
         btnNavTodo = findViewById(R.id.btnNavTodo);
         btnNavProfile = findViewById(R.id.btnNavProfile);
 
-        // Navigasi dari Daily (2)
         btnNavHome.setOnClickListener(v -> pindahHalaman(1, HomeActivity.class));
         btnNavTodo.setOnClickListener(v -> pindahHalaman(3, TodoActivity.class));
         btnNavProfile.setOnClickListener(v -> pindahHalaman(4, ProfileActivity.class));
 
-        // Setting Tombol Back (Mundur)
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                // Balik badan dulu sebelum mundur
                 imgBebek.setScaleX(-1f);
                 supportFinishAfterTransition();
             }

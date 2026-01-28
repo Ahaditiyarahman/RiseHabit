@@ -9,32 +9,29 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TodoActivity extends AppCompatActivity {
 
-    // --- SETTING HALAMAN INI ---
     final int PAGE_INI = 3;
 
     ImageView imgBebek;
-    ImageView btnNavHome, btnNavDaily, btnNavProfile; // Todo tidak perlu
+    ImageView btnNavHome, btnNavDaily, btnNavProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo); // Pastikan nama layout XML benar
+        setContentView(R.layout.activity_todo);
 
         imgBebek = findViewById(R.id.bebekView);
         btnNavHome = findViewById(R.id.btnNavHome);
         btnNavDaily = findViewById(R.id.btnNavDaily);
         btnNavProfile = findViewById(R.id.btnNavProfile);
 
-        // Navigasi dari Todo (3)
         btnNavHome.setOnClickListener(v -> pindahHalaman(1, HomeActivity.class));
         btnNavDaily.setOnClickListener(v -> pindahHalaman(2, DailyActivity.class));
         btnNavProfile.setOnClickListener(v -> pindahHalaman(4, ProfileActivity.class));
 
-        // Setting Tombol Back (Mundur)
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                imgBebek.setScaleX(-1f); // Balik kiri
+                imgBebek.setScaleX(-1f);
                 supportFinishAfterTransition();
             }
         });
