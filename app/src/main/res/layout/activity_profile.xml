@@ -11,35 +11,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/bghome"
+        android:src="@drawable/bgprofile"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <ImageView
-        android:id="@+id/bebekView"
-        android:layout_width="31dp"
-        android:layout_height="41dp"
-        android:src="@drawable/imgbebek"
-        android:transitionName="transisiBebek"
+        android:id="@+id/playerView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/arrowright"
+        android:transitionName="transisiPemain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.456" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:background="#80000000"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView android:id="@+id/btnNavHome" android:src="@drawable/icon" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"/>
-        <ImageView android:id="@+id/btnNavDaily" android:src="@drawable/icon" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"/>
-        <ImageView android:id="@+id/btnNavTodo" android:src="@drawable/icon" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"/>
-        <ImageView android:id="@+id/btnNavProfile" android:src="@drawable/icon" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"/>
+        <ImageView android:id="@+id/btnNavDaily" android:src="@drawable/icon1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"/>
+        <ImageView android:id="@+id/btnNavTodo" android:src="@drawable/icon2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"/>
+        <ImageView android:id="@+id/btnNavProfile" android:src="@drawable/icon3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
